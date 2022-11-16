@@ -16,6 +16,12 @@ function App() {
 		if (selectedElement == "") return null;
 
 		setIconIndex(iconIndex + 1);
+		const element = {
+			id: iconIndex,
+			ref: selectedElement,
+			clientX: coordinates.clientX,
+			clientY: coordinates.clientY,
+		};
 	};
 
 	const coordinates = (event: any) => {
