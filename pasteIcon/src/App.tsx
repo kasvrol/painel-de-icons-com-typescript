@@ -8,6 +8,8 @@ function App() {
 	const [elements, setElements] = useState<Object[]>([]);
 	const [iconIndex, setIconIndex] = useState<number>(0);
 	const [selectedElement, setSelectedElement] = useState<string>("");
+	let firstTime = 0;
+	let firstTouch = null;
 
 	function selectIcon(image: string) {
 		const ref = `./src/assets/${image}.png`;
@@ -32,9 +34,20 @@ function App() {
 		pasteIcon({ clientX, clientY });
 	};
 
+	const removeIcon = (icon: number, event: any) => {
+		const touchTime = new Date().getTime();
+		const target = event.currentTarget;
+
+		console.log(touchTime, target);
+	};
+
 	const renderIcon = (icon: any) => {
 		return (
-			<Draggable nodeRef={iconRef} key={icon.id}>
+			<Draggable
+				nodeRef={iconRef}
+				key={icon.id}
+				onMouseDown={(event) => removeIcon(icon.id, event)}
+			>
 				<div
 					style={{
 						left: icon.clientX,
