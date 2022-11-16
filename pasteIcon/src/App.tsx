@@ -22,6 +22,7 @@ function App() {
 			clientX: coordinates.clientX,
 			clientY: coordinates.clientY,
 		};
+		setElements((prevState) => [...prevState, element]);
 	};
 
 	const coordinates = (event: any) => {
