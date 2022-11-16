@@ -8,8 +8,8 @@ function App() {
 	const [elements, setElements] = useState<Object[]>([]);
 	const [iconIndex, setIconIndex] = useState<number>(0);
 	const [selectedElement, setSelectedElement] = useState<string>("");
-	let firstTime = 0;
-	let firstTouch = null;
+	let firstTime: number = 0;
+	let firstTouch: any = null;
 
 	function selectIcon(image: string) {
 		const ref = `./src/assets/${image}.png`;
@@ -37,8 +37,12 @@ function App() {
 	const removeIcon = (icon: number, event: any) => {
 		const touchTime = new Date().getTime();
 		const target = event.currentTarget;
+		const doubleTouchTime = touchTime - firstTime < 300;
+		const doubleTouchSpace = target == firstTouch;
+		firstTime = touchTime;
+		firstTouch = target;
 
-		console.log(touchTime, target);
+		console.log(doubleTouchTime, doubleTouchSpace);
 	};
 
 	const renderIcon = (icon: any) => {
