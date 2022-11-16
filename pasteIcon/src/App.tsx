@@ -12,16 +12,15 @@ function App() {
 		setSelectedElement(ref);
 	}
 
-	function paste() {
-		console.log(selectedElement);
-	}
-
-	paste();
+	const coordinates = (event: any) => {
+		const { clientX, clientY } = event;
+		console.log({ clientX, clientY });
+	};
 
 	return (
 		<div className="App">
 			<Menu selectIcon={selectIcon} />
-			<div className="coordinates"></div>
+			<div className="coordinates" onClick={coordinates}></div>
 		</div>
 	);
 }
