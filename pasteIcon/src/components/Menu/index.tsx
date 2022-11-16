@@ -1,4 +1,4 @@
-import "../../style/Menu.css";
+import "../../styles/Menu.css";
 import { MenuIconsProps } from "../../utils/interfaces";
 
 const Menu: React.FC<MenuIconsProps> = ({ selectIcon }) => {
@@ -11,7 +11,7 @@ const Menu: React.FC<MenuIconsProps> = ({ selectIcon }) => {
 						key={icon}
 						onClick={() => selectIcon(icon)}
 					>
-						<img src={`../../public/${icon}.png`} />
+						<img src={`./src/assets/${icon}.png`} />
 					</section>
 				);
 			})}
