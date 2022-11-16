@@ -5,3 +5,18 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.button {
+	width: 5vw;
+	height: 5vw;
+	bottom: 5vh;
+	right: 5vw;
+	position: absolute;
+	z-index: 3;
+	background-color: rgba(240, 248, 255, 0.567);
+	background-image: url("./src/assets/touchscreen.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+}
