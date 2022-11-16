@@ -3,7 +3,7 @@ import Menu from "./components/Menu";
 import "./App.css";
 
 function App() {
-	const [elements, setElements] = useState([]);
+	const [elements, setElements] = useState<Object[]>([]);
 	const [iconIndex, setIconIndex] = useState<number>(0);
 	const [selectedElement, setSelectedElement] = useState<string>("");
 
@@ -12,9 +12,13 @@ function App() {
 		setSelectedElement(ref);
 	}
 
+	const pasteIcon = (coordinates: any) => {
+		if (selectedElement == "") return null;
+	};
+
 	const coordinates = (event: any) => {
 		const { clientX, clientY } = event;
-		console.log({ clientX, clientY });
+		pasteIcon({ clientX, clientY });
 	};
 
 	return (
