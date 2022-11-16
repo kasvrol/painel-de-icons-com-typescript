@@ -14,6 +14,8 @@ function App() {
 
 	const pasteIcon = (coordinates: any) => {
 		if (selectedElement == "") return null;
+
+		setIconIndex(iconIndex + 1);
 	};
 
 	const coordinates = (event: any) => {
