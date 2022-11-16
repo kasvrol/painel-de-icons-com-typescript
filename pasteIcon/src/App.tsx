@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Menu from "./components/Menu";
 import Draggable from "react-draggable";
 import "./App.css";
 
 function App() {
+	const iconRef = useRef(null);
 	const [elements, setElements] = useState<Object[]>([]);
 	const [iconIndex, setIconIndex] = useState<number>(0);
 	const [selectedElement, setSelectedElement] = useState<string>("");
@@ -33,17 +34,19 @@ function App() {
 
 	const renderIcon = (icon: any) => {
 		return (
-			<div
-				style={{
-					left: icon.clientX,
-					top: icon.clientY,
-					position: "absolute",
-				}}
-				className="icons"
-				key={icon.id}
-			>
-				Image
-			</div>
+			<Draggable nodeRef={iconRef} key={icon.id}>
+				<div
+					style={{
+						left: icon.clientX,
+						top: icon.clientY,
+						position: "absolute",
+					}}
+					className="icons"
+					ref={iconRef}
+				>
+					Image
+				</div>
+			</Draggable>
 		);
 	};
 
