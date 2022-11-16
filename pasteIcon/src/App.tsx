@@ -58,6 +58,10 @@ function App() {
 					return renderIcon(element);
 				})}
 			</div>
+			<button
+				className="button"
+				onClick={() => setSelectedElement("")}
+			></button>
 		</div>
 	);
 }
