@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Menu from "./components/Menu";
+import Draggable from "react-draggable";
 import "./App.css";
 
 function App() {
@@ -30,10 +31,30 @@ function App() {
 		pasteIcon({ clientX, clientY });
 	};
 
+	const renderIcon = (icon: any) => {
+		return (
+			<div
+				style={{
+					left: icon.clientX,
+					top: icon.clientY,
+					position: "absolute",
+				}}
+				className="icons"
+				key={icon.id}
+			>
+				Image
+			</div>
+		);
+	};
+
 	return (
 		<div className="App">
 			<Menu selectIcon={selectIcon} />
-			<div className="coordinates" onClick={coordinates}></div>
+			<div className="coordinates" onClick={coordinates}>
+				{elements.map((element) => {
+					return renderIcon(element);
+				})}
+			</div>
 		</div>
 	);
 }
