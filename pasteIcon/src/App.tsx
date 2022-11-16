@@ -21,6 +21,7 @@ function App() {
 	return (
 		<div className="App">
 			<Menu selectIcon={selectIcon} />
+			<div className="coordinates"></div>
 		</div>
 	);
 }
