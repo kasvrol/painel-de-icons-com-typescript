@@ -61,7 +61,7 @@ function App() {
 					}}
 					className="icons"
 				>
-					Image
+					<img src={icon.ref} />
 				</div>
 			</Draggable>
 		);
