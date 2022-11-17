@@ -53,8 +53,8 @@ function App() {
 		return (
 			<Draggable
 				nodeRef={iconRef}
-				key={icon.id}
-				onMouseDown={(event) => readArray(icon.id, event)}
+				key={index}
+				onMouseDown={(event) => readArray(index, event)}
 			>
 				<div
 					style={{
