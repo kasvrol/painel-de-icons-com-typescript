@@ -34,6 +34,10 @@ function App() {
 		pasteIcon({ clientX, clientY });
 	};
 
+	const readArray = () => {
+		console.log(elements);
+	};
+
 	const removeIcon = (icon: number, event: any) => {
 		const touchTime = new Date().getTime();
 		const target = event.currentTarget;
@@ -42,7 +46,7 @@ function App() {
 		firstTime = touchTime;
 		firstTouch = target;
 
-		console.log(doubleTouchTime, doubleTouchSpace);
+		console.log(doubleTouchTime, doubleTouchSpace, readArray());
 	};
 
 	const renderIcon = (icon: any) => {
