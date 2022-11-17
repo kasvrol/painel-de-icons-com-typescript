@@ -54,7 +54,6 @@ function App() {
 	const renderIcon = (icon: any, index: number) => {
 		return (
 			<Draggable
-				nodeRef={iconRef}
 				key={index}
 				onMouseDown={(event) => readArray(index, event)}
 			>
@@ -65,7 +64,6 @@ function App() {
 						position: "absolute",
 					}}
 					className="icons"
-					ref={iconRef}
 				>
 					Image
 				</div>
