@@ -1,12 +1,10 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Menu from "./components/Menu";
 import Draggable from "react-draggable";
 import "./App.css";
 
 function App() {
-	const iconRef = useRef(null);
 	const [elements, setElements] = useState<Object[]>([]);
-	const [iconIndex, setIconIndex] = useState<number>(0);
 	const [selectedElement, setSelectedElement] = useState<string>("");
 	let firstTime: number = 0;
 	let firstTouch: any = null;
@@ -19,9 +17,7 @@ function App() {
 	const pasteIcon = (coordinates: any) => {
 		if (selectedElement == "") return null;
 
-		setIconIndex(iconIndex + 1);
 		const element = {
-			id: iconIndex,
 			ref: selectedElement,
 			clientX: coordinates.clientX,
 			clientY: coordinates.clientY,
