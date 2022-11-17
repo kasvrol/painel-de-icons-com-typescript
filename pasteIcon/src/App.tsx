@@ -34,11 +34,11 @@ function App() {
 		pasteIcon({ clientX, clientY });
 	};
 
-	const readArray = () => {
+	const removeIcon = () => {
 		console.log(elements);
 	};
 
-	const removeIcon = (icon: number, event: any) => {
+	const readArray = (icon: number, event: any) => {
 		const touchTime = new Date().getTime();
 		const target = event.currentTarget;
 		const doubleTouchTime = touchTime - firstTime < 300;
@@ -46,7 +46,7 @@ function App() {
 		firstTime = touchTime;
 		firstTouch = target;
 
-		console.log(doubleTouchTime, doubleTouchSpace, readArray());
+		console.log(doubleTouchTime, doubleTouchSpace, removeIcon());
 	};
 
 	const renderIcon = (icon: any) => {
@@ -54,7 +54,7 @@ function App() {
 			<Draggable
 				nodeRef={iconRef}
 				key={icon.id}
-				onMouseDown={(event) => removeIcon(icon.id, event)}
+				onMouseDown={(event) => readArray(icon.id, event)}
 			>
 				<div
 					style={{
