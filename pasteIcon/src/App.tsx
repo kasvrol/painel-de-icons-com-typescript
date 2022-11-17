@@ -49,7 +49,7 @@ function App() {
 		console.log(doubleTouchTime, doubleTouchSpace, removeIcon());
 	};
 
-	const renderIcon = (icon: any) => {
+	const renderIcon = (icon: any, index: number) => {
 		return (
 			<Draggable
 				nodeRef={iconRef}
@@ -75,8 +75,8 @@ function App() {
 		<div className="App">
 			<Menu selectIcon={selectIcon} />
 			<div className="coordinates" onClick={coordinates}>
-				{elements.map((element) => {
-					return renderIcon(element);
+				{elements.map((element: Object, index: number) => {
+					return renderIcon(element, index);
 				})}
 			</div>
 			<button
