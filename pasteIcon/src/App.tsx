@@ -35,7 +35,7 @@ function App() {
 	};
 
 	const removeIcon = (index: number) => {
-		console.log(index);
+		setElements((prevState) => prevState.filter((_, i) => i !== index));
 	};
 
 	const readArray = (index: number, event: any) => {
