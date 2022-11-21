@@ -6,8 +6,7 @@
 <p> Ainda prevejo melhorias para o projeto, então ele ainda não está finalizado.</p>
 
 <h3>Print do Front:</h3>
-<img  src="https://github.com/kasvrol/
-painel-de-icons-com-typescript/blob/main/public/print.png"/>
+<img  src="https://github.com/kasvrol/painel-de-icons-com-typescript/blob/main/public/print.png"/>
 
 <h3>Ferramentas:</h3>
 <ul><li>React</li>
