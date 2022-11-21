@@ -1,6 +1,6 @@
 import "../../styles/Menu.css";
 import { MenuIconsProps } from "../../utils/interfaces";
-import image01 from "../../images/1048361.png";
+import image01 from "../../images/1048323.png";
 import image02 from "../../images/1048329.png";
 import image03 from "../../images/1048361.png";
 
