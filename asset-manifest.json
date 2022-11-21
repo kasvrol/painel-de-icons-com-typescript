@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/painel-de-icons-com-typescript/static/css/main.f0690e50.css",
+    "main.js": "/painel-de-icons-com-typescript/static/js/main.94c044c4.js",
+    "static/media/background.png": "/painel-de-icons-com-typescript/static/media/background.20082089a9e76e01038f.png",
+    "static/media/touchscreen.png": "/painel-de-icons-com-typescript/static/media/touchscreen.96f7b5c209730e667e6a.png",
+    "index.html": "/painel-de-icons-com-typescript/index.html",
+    "main.f0690e50.css.map": "/painel-de-icons-com-typescript/static/css/main.f0690e50.css.map",
+    "main.94c044c4.js.map": "/painel-de-icons-com-typescript/static/js/main.94c044c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0690e50.css",
+    "static/js/main.94c044c4.js"
+  ]
+}
