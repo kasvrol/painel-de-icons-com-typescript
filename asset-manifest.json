@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/painel-de-icons-com-typescript/static/css/main.f0690e50.css",
-    "main.js": "/painel-de-icons-com-typescript/static/js/main.94c044c4.js",
+    "main.js": "/painel-de-icons-com-typescript/static/js/main.7657114b.js",
     "static/media/background.png": "/painel-de-icons-com-typescript/static/media/background.20082089a9e76e01038f.png",
+    "static/media/1048329.png": "/painel-de-icons-com-typescript/static/media/1048329.ad3e7ebb8b4d30afa67a.png",
+    "static/media/1048361.png": "/painel-de-icons-com-typescript/static/media/1048361.02707e7b65571e33cc81.png",
     "static/media/touchscreen.png": "/painel-de-icons-com-typescript/static/media/touchscreen.96f7b5c209730e667e6a.png",
     "index.html": "/painel-de-icons-com-typescript/index.html",
     "main.f0690e50.css.map": "/painel-de-icons-com-typescript/static/css/main.f0690e50.css.map",
-    "main.94c044c4.js.map": "/painel-de-icons-com-typescript/static/js/main.94c044c4.js.map"
+    "main.7657114b.js.map": "/painel-de-icons-com-typescript/static/js/main.7657114b.js.map"
   },
   "entrypoints": [
     "static/css/main.f0690e50.css",
-    "static/js/main.94c044c4.js"
+    "static/js/main.7657114b.js"
   ]
 }
