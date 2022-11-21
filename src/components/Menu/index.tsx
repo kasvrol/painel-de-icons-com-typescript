@@ -11,7 +11,7 @@ const Menu: React.FC<MenuIconsProps> = ({ selectIcon }) => {
 						key={icon}
 						onClick={() => selectIcon(icon)}
 					>
-						<img src={`./src/assets/${icon}.png`} />
+						<img src={`../${icon}.png`} />
 					</section>
 				);
 			})}

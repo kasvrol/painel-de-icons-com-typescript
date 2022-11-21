@@ -10,7 +10,7 @@ function App() {
 	let firstTouch: any = null;
 
 	function selectIcon(image: string) {
-		const ref = `./src/assets/${image}.png`;
+		const ref = `../${image}.png`;
 		setSelectedElement(ref);
 	}
 
