@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Menu from "./components/Menu";
 import Draggable from "react-draggable";
+import image01 from "./images/1048323.png";
+import image02 from "./images/1048329.png";
+import image03 from "./images/1048361.png";
 import "./App.css";
 
 function App() {
@@ -10,13 +13,14 @@ function App() {
 	let firstTouch: any = null;
 
 	function selectIcon(image: string) {
-		const ref = `../${image}.png`;
-		setSelectedElement(ref);
+		const imagesArray = [image01, image02, image03];
+		const index = imagesArray.indexOf(image);
+		setSelectedElement(imagesArray[index]);
 	}
 
 	const pasteIcon = (coordinates: any) => {
 		if (selectedElement == "") return null;
-
+		console.log(selectedElement);
 		const element = {
 			ref: selectedElement,
 			clientX: coordinates.clientX,
