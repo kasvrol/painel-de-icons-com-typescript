@@ -9,8 +9,19 @@ import "./App.css";
 function App() {
 	const [elements, setElements] = useState<Object[]>([]);
 	const [selectedElement, setSelectedElement] = useState<string>("");
+	const [modal, setModal] = useState<string>(false);
 	let firstTime: number = 0;
 	let firstTouch: any = null;
+
+	    useEffect(() => {
+        const height = window.innerHeight;
+        const width = window.innerWidth;
+         if (width < height) {
+            return setModal(true)
+        }
+
+		    return setModal(false)
+    }, []);
 
 	function selectIcon(image: string) {
 		const imagesArray = [image01, image02, image03];
@@ -73,7 +84,12 @@ function App() {
 
 	return (
 		<div className="App">
-			<Menu selectIcon={selectIcon} />
+			{modal? <>
+				<h1 style={{background:"black", color:"red"}}>
+				Este projeto é voltado para desktop
+				</h1>
+			</> : <>
+				<Menu selectIcon={selectIcon} />
 			<div className="coordinates" onClick={coordinates}>
 				{elements.map((element: Object, index: number) => {
 					return renderIcon(element, index);
@@ -83,6 +99,8 @@ function App() {
 				className="button"
 				onClick={() => setSelectedElement("")}
 			></button>
+			</>}
+			
 		</div>
 	);
 }
