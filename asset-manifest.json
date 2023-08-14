@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/painel-de-icons-com-typescript/static/css/main.f0690e50.css",
-    "main.js": "/painel-de-icons-com-typescript/static/js/main.600aa09c.js",
+    "main.css": "/painel-de-icons-com-typescript/static/css/main.0c62bcf8.css",
+    "main.js": "/painel-de-icons-com-typescript/static/js/main.414e00d2.js",
     "static/media/background.png": "/painel-de-icons-com-typescript/static/media/background.20082089a9e76e01038f.png",
     "static/media/1048329.png": "/painel-de-icons-com-typescript/static/media/1048329.ad3e7ebb8b4d30afa67a.png",
     "static/media/1048323.png": "/painel-de-icons-com-typescript/static/media/1048323.ea354ea5cc491952285e.png",
     "static/media/1048361.png": "/painel-de-icons-com-typescript/static/media/1048361.02707e7b65571e33cc81.png",
     "static/media/touchscreen.png": "/painel-de-icons-com-typescript/static/media/touchscreen.96f7b5c209730e667e6a.png",
     "index.html": "/painel-de-icons-com-typescript/index.html",
-    "main.f0690e50.css.map": "/painel-de-icons-com-typescript/static/css/main.f0690e50.css.map",
-    "main.600aa09c.js.map": "/painel-de-icons-com-typescript/static/js/main.600aa09c.js.map"
+    "main.0c62bcf8.css.map": "/painel-de-icons-com-typescript/static/css/main.0c62bcf8.css.map",
+    "main.414e00d2.js.map": "/painel-de-icons-com-typescript/static/js/main.414e00d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0690e50.css",
-    "static/js/main.600aa09c.js"
+    "static/css/main.0c62bcf8.css",
+    "static/js/main.414e00d2.js"
   ]
 }
